@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Episodes = (props) => {
-  const {name, episode, url, air_date, id} = props.result;
+  const {name, episode, air_date, id} = props.result;
 
    return(
      <div className="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">

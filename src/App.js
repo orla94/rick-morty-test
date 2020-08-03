@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Search from './components/Search';
 import ResultSearch from './components/ResultSearch'
 import Navigation from './components/Navigation'
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from './pages/Home';
 import AllEpisodes from './pages/AllEpisodes';
@@ -70,7 +70,7 @@ class App extends Component{
           </div>
           <BrowserRouter>
             <div><Navigation /></div>
-            <div className={ (this.state.searchArray.length == 0) ? 'd-block' : 'd-none'}>
+            <div className={ (this.state.searchArray.length === 0) ? 'd-block' : 'd-none'}>
                 <Switch>
                  <Route exact path="/" component={Home}/>
                  <Route exact path="/episode" component={AllEpisodes}/>

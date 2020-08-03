@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { useParams } from "react-router-dom";
 
 class DetailCharacter extends Component {
     constructor(props){

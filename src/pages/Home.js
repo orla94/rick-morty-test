@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Pagination from './../components/Pagination';
-import { Redirect } from "react-router-dom";
 
 class Home extends Component {
     constructor() {

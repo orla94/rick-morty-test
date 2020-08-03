@@ -42,8 +42,6 @@ class AllEpisodes extends Component {
   }
 
   render() {
-    console.log(this.state.items);
-    let aNuevo = this.state.items.slice(this.state.items.length-5)
     return(
       <div className="row">
          <h1 className="text-center col-12 mb-5 mt-5">EPISODIOS</h1>
