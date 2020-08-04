@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Character from './Character';
-import Episodes from './Episodes';
-import Pagination from './Pagination';
+import Character from './../components/Character';
+import Episodes from './../components/Episodes';
+import Pagination from './../components/Pagination';
 
 class ResultSearch extends Component {
   viewResultSearch = () => {
-    const results = this.props.resultSearch;
+    const results = this.props.location.state.resultSearch;
     if (results === undefined || results.length === 0) return null;
 
     return (
@@ -26,7 +26,7 @@ class ResultSearch extends Component {
 
   typeSearch = (results) => {
 
-    if (this.props.type === 'character') {
+    if (this.props.location.state.type === 'character') {
       return results.map(result => (
         <Character
           key = {result.id}
